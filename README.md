@@ -4,8 +4,6 @@ This is a simple Spring Boot Application which is connects to ActiveMQ server an
 
 This app can also be easily deployed to Heroku cloud
 
-This application supports the [Getting Started with Java on Heroku](https://devcenter.heroku.com/articles/getting-started-with-java) article - check it out.
-
 ## Running Locally
 
 Make sure you have Java and Maven and Eclipse(preferred STS - Spring Tool Suite) installed.  
