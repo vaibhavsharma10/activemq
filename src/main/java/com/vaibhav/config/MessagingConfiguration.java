@@ -1,5 +1,7 @@
 package com.vaibhav.config;
 
+import java.util.Arrays;
+
 import org.apache.activemq.spring.ActiveMQConnectionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -18,6 +20,7 @@ public class MessagingConfiguration {
 	    connectionFactory.setBrokerURL(BROKER_URL);
 	    connectionFactory.setPassword(BROKER_USERNAME);
 	    connectionFactory.setUserName(BROKER_PASSWORD);
+	    connectionFactory.setTrustedPackages(Arrays.asList("com.vaibhav.bean"));
 	    return connectionFactory;
 	}
 

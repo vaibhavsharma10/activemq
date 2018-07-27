@@ -16,7 +16,7 @@ import com.vaibhav.bean.Welcome;
 @Component
 public class Listners {
 	
-	public String receiveMessage(final Message jsonMessage) throws JMSException {
+	/*public String receiveMessage(final Message jsonMessage) throws JMSException {
 		String messageData = null;
 		System.out.println("Received message " + jsonMessage);
 		String response = null;
@@ -27,7 +27,7 @@ public class Listners {
 			response  = "Hello " + map.get("message");
 		}
 		return response;
-	}
+	}*/
 	
 	@JmsListener(destination = "caseform-queue2")
 	public void receivePayLoad(@Payload Welcome welcome) {
